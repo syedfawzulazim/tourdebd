@@ -1,39 +1,55 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>TourBD Admin</title>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  @include('admin.partials.link')
-</head>
 
-<body class="hold-transition skin-blue sidebar-mini">
+  @include('admin.partials.links_scripts.meta')
+  
+  <title>@yield('title')</title>
+  
+  
+  @include('admin.partials.links_scripts.links')
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
-  <!-- Main Header -->
+  <!-- Navbar -->
   @include('admin.partials.header')
-  <!-- Left side column. contains the logo and sidebar -->
-  @include('admin.partials.slider')
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+    @include('admin.partials.slider')
+  <!-- /. Main Sidebar Container -->
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    @include('admin.partials.cheader')
+    <!-- /.content-header -->
 
-    @yield('content')
-
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+       
+       @yield('content')
+        
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
   </div>
+  <!-- /.content-wrapper -->
 
-  <!-- Main Footer -->
   @include('admin.partials.footer')
 
   <!-- Control Sidebar -->
   @include('admin.partials.slidebar')
-
-  <div class="control-sidebar-bg"></div>
+  <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 
-<!-- REQUIRED JS SCRIPTS -->
-@include('admin.partials.script')
+    @include('admin.partials.links_scripts.scripts')
 
 </body>
 </html>

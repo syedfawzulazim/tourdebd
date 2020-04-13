@@ -1,8 +1,7 @@
 <footer class="main-footer">
-  <!-- To the right -->
-  <div class="pull-right hidden-xs">
-  <a href="#"> AdnanSparrow</a>
-  </div>
-  <!-- Default to the left -->
-  <strong>Copyright &copy; 2019 <b>All rights reserved</b> </strong>
-</footer>
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.0.4
+    </div>
+  </footer>

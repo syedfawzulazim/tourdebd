@@ -11,13 +11,14 @@
 |
 */
 
-Route::get('/','PagesController@index')->name('index');
+Route::get('/','frontend\PagesController@index')->name('index');
 
-Route::get('/registration','PagesController@registration')->name('registration');
+Route::get('/registration','frontend\PagesController@registration')->name('registration');
+
 
 Route::group(['prefix' => 'admin'], function(){
 
-  Route::get('/','AdminPagesController@index')->name('admin.index');
+  Route::get('/','backend\AdminPagesController@index')->name('admin.index');
 
 
 });
